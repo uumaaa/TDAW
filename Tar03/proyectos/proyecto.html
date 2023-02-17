@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO</title>
+</head>
+
+<body>
+    <p>Acá debería haber información importante</p>
+    <section>
+        <a href="../index.html">
+            <p>Página principal</p>
+        </a>
+        <a href="../documentos/TAR_TDAW_1_ISO_IkerPluma.pdf">
+            <p>Ver tarea 1 jeje</p>
+        </a>
+        <a href="../personales/info/personal.html">
+            <p>Mira mis datos :o</p>
+        </a>
+    </section>
+    <h2>Demostracion de etiquetas</h2>
+    <h3>dl, dt, dd</h3>
+    <section id="dldtdd">
+        <dl>
+            <dt>¿Para que sirve la etiqueta dl?</dt>
+            <dd>Se utiliza para representar listas de descripciones, similares a listas de preguntas y respuestas</dd>
+            <dt>¿Como se utiliza?</dt>
+            <dd>dl es la que representa la lista en general (como un ol), dt es un nombre y dd es su valor</dd>
+            <dt>¿Hay limite de nombres (dt) y de valores (dd)?</dt>
+            <dd>No, un mismo nombre (dt) puede tener varios valores (dd) y viceversa</dd>
+        </dl>
+    </section>
+    <h3>blockquote</h3>
+    <blockquote>
+        <p>Sirve para citar pero en forma de bloque, esto quiere decir que se utiliza principalmente</p>
+        <p>para citar textos acompañados de alguna imagen u otro elemento</p>
+        <p>tiene un atributo cite que sirve para exponer el link de referencia</p>
+    </blockquote>
+    <h3>q</h3>
+    <q>Similar a blockquote pero exclusivamente para lineas de texto</q>
+    <h3>Cite</h3>
+    <p>Sirve también para citar, pero exclusivamente titulos de <cite>obras</cite>, como alguna pelicula, ej
+        <cite>Wiplash </cite>
+    </p>
+    <h3>abbr</h3>
+    <p>Sirve para crear abreviaciones, como <abbr
+            title="Unidad Profesional Interdisciplinaria de Ingenierias Campus Tlaxcala">UPIIT</abbr></p>
+    <h3>Address</h3>
+    <p>Se utiliza para mostrar la información acerca del autor de una sección, o del documento en generla, su uso más común es dentro del footer</p>
+    <address>
+        Iker Pluma<br>
+        <a href="">correo@example.com</a><br>
+        2462203458
+      </address>
+    </address>
+    <h3>sup y sub</h3>
+    <p>Textos en <sub>subindice</sub> y en <sup>superindice</sup></p>
+    <p>x<sub>1</sub>=e<sup>i</sup></p>
+    <h3>pre y code</h3>
+    <p>Con code podemos representar textos en manera de codigos, además podemos aprovechar el funcionamiento de pre</p>
+    <p>(que preformatea el texto y permite ver espacios y saltos de linea tal como están escritos) para representar el
+        codigo de mejor manera</p>
+    <pre><code>
+        const list = document.createElement('ul');
+        const info = document.createElement('p');
+        const html = document.querySelector('html');
+        info.textContent = 'A continuación se muestra una lista dinámica. Haga clic en cualquier lugar de la página para añadir un nuevo elemento de la lista. Haga clic en un elemento de la lista existente para cambiar su texto por otro.';
+        document.body.appendChild(info);
+        document.body.appendChild(list);
+        html.onclick = function() {
+        const listItem = document.createElement('li');
+        const listContent = prompt('¿Qué contenido quiere que tenga el elemento de la lista?');
+        listItem.textContent = listContent;
+        list.appendChild(listItem);
+        listItem.onclick = function(e) {
+        e.stopPropagation();
+        const listContent = prompt('Introduzca el nuevo contenido del elemento de la lista');
+        this.textContent = listContent;
+        }
+        }
+    </code>
+    </pre>
+    <h3>var</h3>
+    <p>utilizado de manera semántica para representar que lo que está dentro de ella es una variable</p>
+    <p><var>x</var> es el nombre más común de las variables</p>
+    <h3>kbd y samp</h3>
+    kbd muestra alguna entrada que el usuario puede hacer (generalmente desde el teclado)
+    <p>Presiona <kbd>K</kbd> y despues <kbd>O</kbd> para ganar</p>
+    <p>Mientras que la etiqueta samp hace referencia a una salida, generalmente por alguna accion hecha por el usuario</p>
+    <p>La computadora generó un error, <samp>ERROR 404: NOT FOUND</samp></p>
+    <p>kbd contiene samp: representa una entrada del usuario generada por la salida la computadora</p>
+    <p>samp contiene kbd representa una salida que contiene alguna entrada del usuario</p>
+    <h3>time</h3>
+    <p>Para mostrar la fecha y hora, se utiliza principamente en comentarios o foros</p>
+    <p>Todos los dias me duermo a las <time>12:00pm</time></p>
+</body>
+
+</html>
