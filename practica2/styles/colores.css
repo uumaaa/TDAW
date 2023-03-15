@@ -1,0 +1,29 @@
+h1,h2,h3,h4,nav,footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    background-color: aquamarine;
+}
+main{
+    background-color: white;
+    margin-top:1em 4em;
+    padding: 0.5em;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 0.75rem;
+}
+h3{
+    font-size: 1em;
+    border-bottom: solid 1pt rgb(153, 153, 153);
+}
+p{
+    font-size: 1em;
+    margin:  0 0 0.5em 0;
+        letter-spacing: 1px;
+}

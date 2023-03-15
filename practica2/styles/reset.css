@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+nav ul li a {
+    padding-left: 20px;
+}
+a:hover{
+    font-weight: bolder;
+    background-color: black;
+}

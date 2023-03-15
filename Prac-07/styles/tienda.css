@@ -1,0 +1,64 @@
+body{
+    background-image: url("../images/art-background4.jpg");
+    background-size: cover;
+}
+@font-face { font-family: "SixCaps"; src: url(../fonts/SixCaps-Regular.ttf); } 
+@font-face { font-family: "Roboto"; src: url(../fonts/Roboto-Bold.ttf); }
+.Titulo{
+    font-size: 4vw;
+    font-family: SixCaps;
+}
+.Eslogan {
+    font-size: 1vw;
+    min-height: 30px;
+}
+.Cabecera{
+    background-color: white;
+    margin-left: 10vw;
+    padding: 2.0vw;
+    width: 28vw;
+}
+.Construccion{
+    background-color: rgba(255, 255, 255, 0.817); 
+    font-size: 1.5vw;
+    padding-left: 2.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    width: 35vw;
+    font-weight: bold;
+    font-family: Roboto;
+}   
+.Contactos {
+    background-color: rgba(255, 255, 255, 0.943);
+    margin-left: 10vw;
+    width: 35vw;
+    padding: 4vh;
+}
+.Informacion{
+    background-color:rgba(255, 255, 255, 0.679);
+    display: block;
+    margin-left: 10vw;
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 35vw;
+}
+.Fecha {
+    background-color: rgba(0, 0, 0, 0.467);
+    color: white;
+    width:22vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin-top: 2vh;
+    padding: 2.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Actividad {   
+    color: black;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-top: 1vh;
+    width: 40;
+}
