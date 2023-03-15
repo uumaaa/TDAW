@@ -106,11 +106,11 @@ section em {
     margin-right: 0.5em;
 }
 .Edit{
-    background-image: url(../images/edit.png) no-repeat;
+    background: url(../images/edit.png) no-repeat;
     background-position: 0.250em 0.150em;
 }
 .Flag{
-    background-color: url(../images/flag.png) no-repeat;
+    background: url(../images/flag.png) no-repeat;
     background-position: 0.250em 0.150em;   
 }
 footer{
