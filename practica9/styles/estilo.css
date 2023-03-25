@@ -12,8 +12,14 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .Principal {
-    display: table-column;
+  .Centro {
+    width: 100vw;
+  }
+  .BarraIzquierda {
+    display: none;
+  }
+  .BarraDerecha {
+    display: none;
   }
 }
 
@@ -188,7 +194,7 @@ hr {
 }
 .Cambios span {
   float: left;
-  font-size: 40px;
+  font-size: max(2.5vw, 20px);
   width: 25%;
   margin-right: 10px;
 }
