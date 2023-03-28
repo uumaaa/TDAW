@@ -11,18 +11,6 @@ hr {
   width: 95%;
 }
 
-@media (max-width: 600px) {
-  .Centro {
-    width: 100vw;
-  }
-  .BarraIzquierda {
-    display: none;
-  }
-  .BarraDerecha {
-    display: none;
-  }
-}
-
 /*Barra de navegacion*/
 .BarraNavegacion {
   background-color: #3f9fd9;
@@ -211,4 +199,20 @@ hr {
 }
 .BarraDerecha {
   background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .Centro {
+    width: 100vw;
+    padding: 10px;
+    margin: 10px;
+  }
+  .Derecha {
+    display: none;
+    width: 0;
+  }
+  .Izquierda {
+    display: none;
+    width: 0;
+  }
 }
