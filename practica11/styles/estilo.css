@@ -1,0 +1,112 @@
+.piece {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  transition: background-color 0.2s ease;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.piece:hover {
+  background-color: #333;
+}
+
+.piece:active {
+  background-color: #222;
+}
+
+#piece1 {
+  background-image: linear-gradient(to bottom, #000, #111);
+}
+
+#piece2 {
+  background-image: linear-gradient(to bottom, #111, #222);
+}
+
+#piece3 {
+  background-image: linear-gradient(to bottom, #222, #333);
+}
+
+#piece4 {
+  background-image: linear-gradient(to bottom, #333, #444);
+}
+
+#piece5 {
+  background-image: linear-gradient(to bottom, #444, #555);
+}
+
+#piece6 {
+  background-image: linear-gradient(to bottom, #555, #666);
+}
+
+#piece7 {
+  background-image: linear-gradient(to bottom, #666, #777);
+}
+
+#piece8 {
+  background-image: linear-gradient(to bottom, #777, #888);
+}
+
+#piece9 {
+  background-image: linear-gradient(to bottom, #888, #999);
+  color: #000;
+}
+
+#piece10 {
+  background-image: linear-gradient(to bottom, #999, #aaa);
+  color: #000;
+}
+
+#piece11 {
+  background-image: linear-gradient(to bottom, #aaa, #bbb);
+  color: #000;
+}
+
+#piece12 {
+  background-image: linear-gradient(to bottom, #bbb, #ccc);
+  color: #000;
+}
+
+#piece13 {
+  background-image: linear-gradient(to bottom, #ccc, #ddd);
+  color: #000;
+}
+
+#piece14 {
+  background-image: linear-gradient(to bottom, #ddd, #eee);
+  color: #000;
+}
+
+#piece15 {
+  background-image: linear-gradient(to bottom, #eee, #fff);
+  color: #000;
+}
+
+#piece16 {
+  background-image: linear-gradient(to bottom, #fff, #fff);
+}
+
+#puzzle {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 60px);
+  margin: 20px;
+  border: 5px solid #000;
+  width: 240px;
+  background-color: #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#puzzle button:nth-child(4n) {
+  border-right: none;
+}
+
+#puzzle button:nth-child(4n + 1) {
+  border-left: none;
+}

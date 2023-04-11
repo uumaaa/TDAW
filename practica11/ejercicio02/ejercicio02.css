@@ -1,0 +1,95 @@
+h1,
+h2,
+h3,
+nav,
+footer {
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+  font-size: 80%;
+}
+div#search {
+  margin-top: 1em;
+  margin: 0.25em auto;
+  background-color: #ebf4ff;
+  padding: 1em;
+  border: 1.5pt solid #95bef0;
+  width: 80%;
+}
+div#set {
+  margin: 0.25em auto;
+  background-color: #ebf4ff;
+  padding: 1em;
+  border: 1.5pt solid #95bef0;
+  width: 80%;
+}
+
+div#art {
+  background-color: #ebf4ff;
+  margin-top: 1em;
+  background-color: #fafcff;
+  margin: 0.25em auto;
+  padding: 1em;
+  border: 1.5pt solid #95bef0;
+  width: 80%;
+}
+
+caption {
+  background-color: #95bef0;
+  padding: 0.5em 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td {
+  border-top: 1pt solid #95bef0;
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 0.5em 0.75em;
+}
+
+tbody {
+  border-top: 1pt solid #95bef0;
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 0.5em 0.75em;
+}
+table th {
+  text-align: left;
+  padding: 0.25em 0.75em;
+}
+thead {
+  text-align: left;
+  padding: 0.25em 0.75em;
+}
+table thead {
+  background-color: #ebf4ff;
+}
+
+table tbody td:first-child {
+  text-align: center;
+  padding: 0.5em 0em;
+}
+
+.contenedor {
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  width: 30vw;
+  height: 50vh;
+  background-color: rgb(255, 246, 230);
+  padding: 5vw;
+}
+.cerrar {
+  position: absolute;
+  top: 12vh;
+  left: 87vw;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+}

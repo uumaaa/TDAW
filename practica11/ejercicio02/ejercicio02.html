@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es-MX">
+    <meta charset="utf-8" />
+    <title>ejercicio02</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="ejercicio02.css" />
+    <script src="ejercicio002.js" defer></script>
+  </head>
+  <body>
+    <form method="get" action="" id="formulario">
+      <div id="search">
+        <input
+          type="search"
+          name="search"
+          placeholder="Búsqueda de títulos"
+        /><input type="submit" value="Search" />
+      </div>
+
+      <div id="set">
+        <select name="action">
+          <option value="0">Acciones</option>
+          <option value="1">Archivo</option>
+          <option value="2">Eliminar</option>
+        </select>
+        <input type="button" value="Aplicar" />
+        <select name="filter" id="filtro">
+          <option value="0">Género</option>
+          <option value="1">Barroco</option>
+          <option value="2">Manierismo</option>
+          <option value="3">Neo-Clasicismo</option>
+          <option value="4">Realismo</option>
+          <option value="5">Romanticismo</option>
+        </select>
+        <input type="submit" value="Filtrar" />
+      </div>
+
+      <div id="art">
+        <table>
+          <caption>
+            Obras
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2"></th>
+              <th>Título</th>
+              <th>Artista</th>
+              <th>Año</th>
+              <th>Género</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="index[]" value="10" /></td>
+              <td>
+                <img
+                  src="images/05030.jpg"
+                  alt="Muerte de Marat"
+                  class="imgMiniatura"
+                />
+              </td>
+              <td><em>Muerte de Marat</em></td>
+              <td>David, Jacques-Louis</td>
+              <td>1793</td>
+              <td class="Genero">Romanticismo</td>
+              <td>
+                <button class="editar" type="button">
+                  <a href="#"><img src="images/edit16.png" alt="" /> Editar</a>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="index[]" value="20" /></td>
+              <td>
+                <img
+                  src="images/120010.jpg"
+                  alt="Retrato de Eleanor de Toledo"
+                  class="imgMiniatura"
+                />
+              </td>
+              <td><em>Retrato de Eleanor de Toledo</em></td>
+              <td>Bronzino, Agnolo</td>
+              <td>1545</td>
+              <td class="Genero">Manierismo</td>
+              <td>
+                <button class="editar" type="button">
+                  <a href="#"><img src="images/edit16.png" alt="" /> Editar</a>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="index[]" value="30" /></td>
+              <td>
+                <img
+                  src="images/07020.jpg"
+                  alt="La libertad guiando al pueblo"
+                  class="imgMiniatura"
+                />
+              </td>
+              <td><em>La libertad guiando al pueblo</em></td>
+              <td>Delacroix, Eugene</td>
+              <td>1830</td>
+              <td class="Genero">Romanticismo</td>
+              <td>
+                <button class="editar" type="button">
+                  <a href="#"><img src="images/edit16.png" alt="" /> Editar</a>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="index[]" value="40" /></td>
+              <td>
+                <img
+                  src="images/13030.jpg"
+                  alt="Arreglo en gris y negro"
+                  class="imgMiniatura"
+                />
+              </td>
+              <td><em>Arreglo en gris y negro</em></td>
+              <td>Whistler, James Abbott</td>
+              <td>1871</td>
+              <td class="Genero">Realismo</td>
+              <td>
+                <button class="editar" type="button">
+                  <a href="#"><img src="images/edit16.png" alt="" /> Editar</a>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="index[]" value="50" /></td>
+              <td>
+                <img
+                  src="images/06010.jpg"
+                  alt="Mademoiselle Caroline Riviere"
+                  class="imgMiniatura"
+                />
+              </td>
+              <td><em>Mademoiselle Caroline Riviere</em></td>
+              <td>Ingres, Jean-Auguste</td>
+              <td>1806</td>
+              <td class="Genero">Neo-Clasicismo</td>
+              <td>
+                <button class="editar" type="button">
+                  <a href="#"><img src="images/edit16.png" alt="" /> Editar</a>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

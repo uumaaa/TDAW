@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es'MX">
+    <meta charset="utf-8" />
+    <title>Prevalidación</title>
+    <link rel="stylesheet" href="ejercicio01.css" />
+    <script src="ejercicio01.js" defer></script>
+  </head>
+
+  <body>
+    <form method="get" action="" id="formulario">
+      <fieldset>
+        <legend>Detalles de la foto</legend>
+        <table>
+          <tr>
+            <td>
+              <p id="error" class="oculto">
+                <strong>Error</strong>
+                <label id="errorMensaje"></label>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>
+                <label>Título*</label><br />
+                <input type="text" name="title" size="80" class="requerido" />
+              </p>
+              <p>
+                <label>Descripcion*</label><br />
+                <textarea name="" rows="7" cols="85" class="requerido">
+                </textarea>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label>Continente</label><br />
+                <select name="continent">
+                  <option>Escoger continente</option>
+                  <option>Africa</option>
+                  <option>Asia</option>
+                  <option>Europa</option>
+                  <option>Norte América</option>
+                  <option>Sur América</option>
+                </select>
+              </p>
+
+              <p>
+                <label>País</label><br />
+                <select name="country">
+                  <option>País</option>
+                  <option>Canada</option>
+                  <option>México</option>
+                  <option>Estados Unidos</option>
+                </select>
+              </p>
+              <p>
+                <label>Ciudad</label><br />
+                <input type="text" name="city" list="cities" size="45" />
+                <datalist id="cities">
+                  <option>Calgary</option>
+                  <option>Montreal</option>
+                  <option>Toronto</option>
+                  <option>Vancouver</option>
+                </datalist>
+              </p>
+            </td>
+
+            <td>
+              <div class="rightBoxes">
+                <label>Copyright? </label><br />
+                <input type="radio" name="copyright" value="1" />Todos los
+                derechos reservados<br />
+                <input
+                  type="radio"
+                  name="copyright"
+                  value="2"
+                  checked
+                />Creative Commons<br />
+              </div>
+
+              <div class="rightBoxes">
+                <label>Licencias Creative Commons</label><br />
+                <input type="checkbox" name="cc" />Atribución<br />
+                <input type="checkbox" name="cc" />No comercial <br />
+                <input type="checkbox" name="cc" />No hay trabajos
+                derivativos<br />
+                <input type="checkbox" name="cc" />Compartir por igual
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <div class="rec">
+                <label>Acepto la licencia de software *</label>
+                <input type="checkbox" name="accept" class="requerido" />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label
+                  >Califica esta foto: <br />
+                  <input type="number" min="1" max="5" name="rate" />
+                </label>
+              </p>
+              <p>
+                <label
+                  >Colección de color: <br />
+                  <input type="color" name="color" />
+                </label>
+              </p>
+            </td>
+            <td>
+              <div class="rightBoxes">
+                <p>
+                  <label
+                    >Fecha de toma: <br />
+                    <input type="date" name="date" />
+                  </label>
+                </p>
+                <p>
+                  <label
+                    >Hora de toma: <br />
+                    <input type="time" name="time" />
+                  </label>
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="rec center">
+                <input type="submit" class="round" />
+                <input type="reset" value="limpiar" class="round" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
