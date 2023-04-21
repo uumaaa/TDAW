@@ -75,7 +75,8 @@ for (let imagenMiniatura of imagenesMiniatura) {
 const registros = document.querySelectorAll(".Genero");
 var filtrado = document.getElementById("filtro");
 var formularioFiltrar = document.getElementById("formulario");
-formularioFiltrar.onsubmit = function () {
+formularioFiltrar.onsubmit = function (event) {
+  event.preventDefault();
   const seleccionFiltro = filtrado.options[filtrado.selectedIndex].text;
   for (let registroIndividual of registros) {
     if (registroIndividual.innerHTML === seleccionFiltro) {

@@ -89,6 +89,7 @@
 
 #piece16 {
   background-image: linear-gradient(to bottom, #fff, #fff);
+  color: #000;
 }
 
 #puzzle {
@@ -109,4 +110,43 @@
 
 #puzzle button:nth-child(4n + 1) {
   border-left: none;
+}
+
+.Botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  width: 240px;
+  justify-content: space-around;
+}
+#botonComenzar {
+  width: 100px;
+  background-color: #000;
+  border-radius: 4px;
+  color: #fff;
+  height: 35px;
+}
+#botonDetener {
+  width: 100px;
+  background-color: #000;
+  border-radius: 4px;
+  color: #fff;
+  height: 35px;
+}
+#Cronometro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 240px;
+  font-size: 35px;
+}
+#Ganaste {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  font-size: 34px;
+  font-weight: bold;
 }
